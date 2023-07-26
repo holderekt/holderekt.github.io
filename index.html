@@ -1,10 +1,12 @@
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
-
+        
+        <title>Ivan Diliso Website</title>
         <style>
             a{
             text-decoration: none; 
@@ -17,7 +19,7 @@
     </head>
     <body>
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top">
             
 
                 <a class="navbar-brand" href="#" style="padding-right: 50px;" center>Ivan Diliso Portfolio</a>
@@ -27,11 +29,11 @@
             
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item active ">
+                    <a class="nav-link text-info" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Academic</a>
+                        <a class="nav-link" href="./pages/academic.html">Academic</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#">Projects</a>
@@ -41,7 +43,7 @@
                     </li>
     
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Study Materials</a>
+                        <a class="nav-link" href="./pages/study.html">Study Materials</a>
                     </li>
             
                 </ul>
@@ -60,25 +62,34 @@
                 <img src="./assets/images/propic.png" alt="Immagine Persona" class="img-fluid" width="120" style="padding-bottom: 20px;">
                 
                 <h3>Ivan Diliso</h2>
+                    
                 <p>Hi! I am a master degree student and aspiring researcher from University of Bari, Italy</p>
                 <ul class="list-unstyled">
+
+                <li>
+                    <i class="fas fa-location-dot "></i>  <i  class="font-weight-normal">Bari, Italy</i>
+                </li>
+
+                <li>
+                    <i class="fas fa-building-columns"></i>  <i  class="font-weight-normal">University of Bari Aldo Moro</i>
+                </li>
                 <li>
                     
-                    <a href="#"> 
-                        <i  class="fa fa-github" > Github</i>
-                    </a>
+                   
+                        <i  class="fa fa-github font-weight-normal" >  </i> <i  class="font-weight-normal">Github</i>
+                    
 
                 </li>
                 <li>
                     
-                    <a href="link_github" target="_blank">
-                        <i class="ai ai-google-scholar-square "> Scholar </i>
-                    </a>
+                   
+                        <i class="ai ai-google-scholar-square "> </i>  <i  class="font-weight-normal">Scholar</i>
+                   
                 </li>
                 <li>
-                    <a href="#"> 
-                        <i  class="fa fa-instagram" > Instagram</i>
-                    </a>
+            
+                        <i  class="fa fa-instagram font-weight-normal" ></i>  <i  class="font-weight-normal">Instagram</i>
+                  
                 </li>
                 </ul>
             </div>
@@ -86,16 +97,23 @@
 
 
             <!-- Colonna destra per i contenuti principali -->
-            <div class="col-md-8">
+            <div class="col-md-8 pl-5">
             <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
             
                 <!-- Contenuti principali -->
                 <h2><p class="font-weight-bold">About me </p></h2>
-                <p class="font-weight-normal">Hi, I'm Ivan Diliso, a data science student from Bari, Italy! My main topics of interest are, quantum computing, computer vision and language models, even tho I end up doing clustering most of the time. I am currently trying to finish my master degree in Data Science while I try to organize the various personal and academic projects.</p>
+                <hr class="hr bg-info" />
+                <p class="font-weight-normal">Hi, I'm Ivan Diliso, a data science student from Bari, Italy! My main topics of interest are, computer vision, language models and quantum computing, even though I end up doing clustering most of the time. I am currently focusing my study on my last exams for my degree and working on my thesis project while organizing the variuos personal and academic projects.</p>
 
                 <h2><p class="font-weight-bold">What am I working on? </p></h2>
-                <p class="font-weight-normal"> Currently trying to develop a web app to connect a augmented vision visor with the NFT blockchain. I am also trying to optimize the quantum KMeans implementation trying differnt types of data encoding, quantum similarity measures and architectures.</p>
+                <hr class="hr bg-info" />
+                <p class="font-weight-normal "> These are the projects I worked on in the last few months or that I am currently working on:</p>
 
+                <ul class="list-unstyled ">
+                    <li> <p class="font-weight-normal "><i class="fa-solid fa-dove"></i> Reinforcement learning for vision based drone navigation </p> </li>
+                    <li> <p class="font-weight-normal"><i class="fas fa-laptop-code"></i>  Webserver middleware API for connecting an agumented reality visor to the NFT blockchain </p> </li>
+                    <li> <p class="font-weight-normal"><i class="fa-solid fa-circle-nodes"></i>  Quantum incremental learning with quantum clustering data filtering </p> </li>
+                </ul>
 
             <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
             </div>
