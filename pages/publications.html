@@ -28,14 +28,28 @@
 
     <title>Ivan Diliso Website</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
 
     <style>
-      a,
-      a:hover {
+      a {
+        text-decoration: none;
         color: black;
         font-family: Arial;
       }
@@ -43,7 +57,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
       <a class="navbar-brand" href="#" style="padding-right: 50px" center
         >Ivan Diliso Portfolio</a
       >
@@ -61,31 +75,31 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link text-info" href="#"
-              >Home <span class="sr-only">(current)</span></a
+              >Publications <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/publications.html">Publications</a>
+            <a class="nav-link" href="academic.html">Academic </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./pages/academic.html">Academic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/projects.html">Projects</a>
+            <a class="nav-link" href="projects.html">Projects</a>
           </li>
           <li class="nav-item">
             <a
               class="nav-link"
               href="#"
-              onclick="window.open('./assets/CV.pdf')"
+              onclick="window.open('../assets/CV.pdf')"
               >Curriculum</a
             >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="./pages/study.html">Study Materials</a>
+            <a class="nav-link" href="study.html">Study Materials</a>
           </li>
         </ul>
       </div>
@@ -99,7 +113,7 @@
         <div class="col-md-3 text-left">
           <!-- Utilizza "text-left" al posto di "text-start" se preferisci -->
           <img
-            src="./assets/images/propic.png"
+            src="../assets/images/propic.png"
             alt="Immagine Persona"
             class="img-fluid"
             width="120"
@@ -144,44 +158,47 @@
           <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
 
           <!-- Contenuti principali -->
-          <h2><p class="font-weight-bold">About me</p></h2>
-          <hr class="hr bg-info" />
-          <p class="font-weight-normal">
-            Hi, I'm Ivan Diliso, a data science student from Bari, Italy! My
-            main topics of interest are, computer vision, language models and
-            quantum computing, even though I end up doing clustering most of the
-            time. I am currently focusing my study on my last exams for my
-            degree and working on my thesis project while organizing the variuos
-            personal and academic projects.
-          </p>
 
-          <h2><p class="font-weight-bold">What am I working on?</p></h2>
+          <h2>
+            <p class="font-weight-bold">Publications</p>
+          </h2>
           <hr class="hr bg-info" />
-          <p class="font-weight-normal">
-            These are the projects I worked on in the last few months or that I
-            am currently working on:
-          </p>
 
-          <ul class="list-unstyled">
-            <li>
-              <p class="font-weight-normal">
-                <i class="fa-solid fa-dove"></i> Reinforcement learning for
-                vision based drone navigation
-              </p>
-            </li>
-            <li>
-              <p class="font-weight-normal">
-                <i class="fas fa-laptop-code"></i> Webserver middleware API for
-                connecting an agumented reality visor to the NFT blockchain
-              </p>
-            </li>
-            <li>
-              <p class="font-weight-normal">
-                <i class="fa-solid fa-circle-nodes"></i> Quantum incremental
-                learning with quantum clustering data filtering
-              </p>
-            </li>
-          </ul>
+          <div class="container-left" style="margin-left: 0; padding-left: 0">
+            <ul class="list-group list-group-flush">
+              <!-- Primo Progetto -->
+              <li class="list-group-item">
+                <h6>A Hybrid Quantum-Classical Framework for Binary Classification in Online Learning</h5>
+                <p class="text-info" style="display:inline">
+                  <small>
+                    Corrado Loglisci, Ivan Diliso, Donato Malerba </small></p>
+                <p class="text-secondary" style="display:inline">
+                      <small>SEBD 2023, 88-89</small>
+                  </p>
+
+                <a href="https://ceur-ws.org/Vol-3478/paper79.pdf"><p class="text-primary" style="display:inline" >
+                    <small>View</small>
+                </p></a>
+                <p></p>
+
+
+
+                <p class="text-secondary"> <small> 
+              
+                  In this paper, we show how typical issues of online learning can be equally addressed with the properties of quantum mechanics, until to offer better results. We aim at keeping the classification capabilities, which have learned on previously processed data instances, preserved as much as possible, and then acquiring new knowledge on new data instances. To this end, we propose a class of quantum neural networks, variational quantum circuits, that being adapted over time by exploiting techniques of model update used in classical neural networks. Experiments are performed on real-world datasets with quantum simulators.
+                
+                </small>
+                 
+                </p>
+              </li>
+
+              </li>
+
+              <!-- Aggiungere altri progetti come necessario -->
+            </ul>
+          </div>
+
+
 
           <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
         </div>
