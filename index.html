@@ -1,30 +1,14 @@
 <html>
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
 
     <title>Ivan Diliso Website</title>
 
@@ -34,173 +18,161 @@
     <link rel="manifest" href="site.webmanifest" />
 
     <style>
-      a,
-      a:hover {
-        color: black;
-        font-family: Arial;
-      }
+        a,
+        a:hover {
+            color: black;
+            font-family: Arial;
+        }
+
+        #left {
+            top: 0px;
+            bottom: 0;
+            left: 0;
+            overflow-y: scroll; 
+        }
+
+        #middle {
+            position: absolute;
+            top: 100px;
+            bottom: 0;
+            left: 40%;
+
+            overflow-y: auto; 
+        }
+  
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light navbar-fixed-top">
-      <a class="navbar-brand" href="#" style="padding-right: 50px" center
-        >Ivan Diliso Portfolio</a
-      >
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link text-info" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/publications.html">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/academic.html">Academic</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#"
-              onclick="window.open('./assets/CV.pdf')"
-              >Curriculum</a
-            >
-          </li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-info" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/publications.html">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/academic.html">Academic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="window.open('./assets/CV.pdf')">Curriculum</a>
+                </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/study.html">Study Materials</a>
-          </li>
-        </ul>
-      </div>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/study.html">Study Materials</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     </nav>
     <!-- NAVBAR -->
 
     <!--    MAIN WEBSITE -->
     <div class="container mt-4">
-      <div class="row">
-        <!-- Colonna sinistra con informazioni personali -->
-        <div class="col-md-3 text-left">
-          <!-- Utilizza "text-left" al posto di "text-start" se preferisci -->
-          <img
-            src="./assets/images/propic.png"
-            alt="Immagine Persona"
-            class="img-fluid"
-            width="120"
-            style="padding-bottom: 20px"
-          />
+        <div class="row">
+            <!-- Colonna sinistra con informazioni personali -->
+            <div class="col-sm-4 text-left" id="left">
+                <!-- Utilizza "text-left" al posto di "text-start" se preferisci -->
+                <img src="./assets/images/propic.png" alt="Immagine Persona" class="img-fluid" width="120"
+                    style="padding-bottom: 20px" />
 
-          <h3>Ivan Diliso</h3>
+                <h3>Ivan Diliso</h3>
 
-          <p>
-            Hi! I am a master degree student and aspiring researcher from
-            University of Bari, Italy
-          </p>
-          <ul class="list-unstyled">
-            <li>
-              <i class="fas fa-location-dot"></i>
-              <i class="font-weight-normal">Bari, Italy</i>
-            </li>
+                <p>
+                    Hi! I am a master degree student and aspiring researcher from
+                    University of Bari, Italy
+                </p>
+                <ul class="list-unstyled">
+                    <li>
+                        <i class="fas fa-location-dot"></i>
+                        <i class="font-weight-normal">Bari, Italy</i>
+                    </li>
 
-            <li>
-              <i class="fas fa-building-columns"></i>
-              <i class="font-weight-normal">University of Bari Aldo Moro</i>
-            </li>
-            <li>
-              <a href="https://github.com/holderekt">
-                <i class="fa fa-github font-weight-normal"> </i>
-                <i class="font-weight-normal">Github</i></a
-              >
+                    <li>
+                        <i class="fas fa-building-columns"></i>
+                        <i class="font-weight-normal">University of Bari Aldo Moro</i>
+                    </li>
+                    <li>
+                        <a href="https://github.com/holderekt">
+                            <i class="fa fa-github font-weight-normal"> </i>
+                            <i class="font-weight-normal">Github</i></a>
+                        </li>
 
-              <!--
-                </li>
-                    
-                   
-                        <i class="ai ai-google-scholar-square "> </i>  <i  class="font-weight-normal">Scholar</i>
-                   
-                </li>-->
-            </li>
-          </ul>
+                        <li>
+                            <a href="https://scholar.google.com/citations?user=0nkHZcQAAAAJ&hl=it&oi=ao">
+                                <i class="ai ai-google-scholar font-weight-normal"> </i>
+                                <i class="font-weight-normal">Scholar</i></a>
+                            </li>
+                </ul>
+            </div>
+
+            <!-- Colonna destra per i contenuti principali -->
+            <div class="col-md-6" id="middle">
+                <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
+
+                <!-- Contenuti principali -->
+                <h3>
+                    <p class="font-weight-bold">About me</p>
+                </h3>
+                <hr class="hr bg-info" />
+                <p class="font-weight-normal">
+                    Hi, I'm Ivan Diliso, a data science student from Bari, Italy! My
+                    main topics of interest are, computer vision, language models and
+                    quantum computing, even though I end up doing clustering most of the
+                    time. I am currently focusing my study on my last exams for my
+                    degree and working on my thesis project while organizing the variuos
+                    personal and academic projects.
+                </p>
+
+                <h3>
+                    <p class="font-weight-bold">What am I working on?</p>
+                </h3>
+                <hr class="hr bg-info" />
+                <p class="font-weight-normal">
+                    These are the projects I worked on in the last few months or that I
+                    am currently working on:
+                </p>
+
+                <ul class="list-group">
+                    <li class="list-group-item"> <span class="badge badge-warning badge-pill">Ongoing</span> Hybrid quantum deep metric learning for image datasets </li>
+                    <li class="list-group-item"> <span class="badge badge-success badge-pill">Done</span> Study of transferability of adversarial white box attacks</li>
+                    <li class="list-group-item"><span class="badge badge-success badge-pill">Done</span> Genetic algorithms for game strategy optimization</li>
+                    <li class="list-group-item"> <span class="badge badge-warning badge-pill">Ongoing</span> Text dataset cleanup for D&D type of games</li>
+
+                  </ul>
+
+
+                <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
+            </div>
         </div>
-
-        <!-- Colonna destra per i contenuti principali -->
-        <div class="col-md-8 pl-5">
-          <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
-
-          <!-- Contenuti principali -->
-          <h2><p class="font-weight-bold">About me</p></h2>
-          <hr class="hr bg-info" />
-          <p class="font-weight-normal">
-            Hi, I'm Ivan Diliso, a data science student from Bari, Italy! My
-            main topics of interest are, computer vision, language models and
-            quantum computing, even though I end up doing clustering most of the
-            time. I am currently focusing my study on my last exams for my
-            degree and working on my thesis project while organizing the variuos
-            personal and academic projects.
-          </p>
-
-          <h2><p class="font-weight-bold">What am I working on?</p></h2>
-          <hr class="hr bg-info" />
-          <p class="font-weight-normal">
-            These are the projects I worked on in the last few months or that I
-            am currently working on:
-          </p>
-
-          <ul class="list-unstyled">
-            <li>
-              <p class="font-weight-normal">
-                <i class="fa-solid fa-circle-nodes"></i> Quantum incremental
-                learning with quantum clustering data filtering
-              </p>
-            </li>
-          </ul>
-
-          <!-------------------           CUSTOM PAGE CONTENT     ---------------------------------------------------------->
-        </div>
-      </div>
     </div>
     <!--    END MAIN WEBSITE -->
 
     <div style="clear: both; height: 60px"></div>
 
-    <footer class="bg-dark text-center text-white fixed-bottom">
-      <!-- Copyright -->
-      <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.2)">
-        © 2023 Copyright: Ivan Diliso
-      </div>
-      <!-- Copyright -->
-    </footer>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
